@@ -1,0 +1,53 @@
+body{
+	font-family: Times New Roman;
+    color: #333;
+}
+h1{
+    font-weight: normal;
+    margin-left: 20px;
+    text-align: center;
+}
+form{
+    width: 40%;
+    margin: 10px auto;
+}
+input{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px;
+    box-sizing: border-box;	
+	display: block;
+    font-size: 2em;    
+    border-radius: 8px;
+    border: 2px solid #cccccc;
+    /*Some browsers add a  blue outline around the input when it gets focus (clicked on) so i do not want that*/
+	outline: none;
+	resize: none;
+}
+
+/* validation styles */
+
+input.valid{
+    border-color: #32CD32;
+}
+input.invalid{
+    border-color: #FF6347;
+}
+input + p{
+    font-family: Times New Roman;
+	font-style: italic;
+	/* we can also assign in px but it is recommended to use em */
+	The em size unit is recommended by the W3C.
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: #FFA07A;
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 15px;
+}
